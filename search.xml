@@ -584,7 +584,26 @@
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 新增字段</span></span><br><span class="line">sitemap: </span><br><span class="line">  path: sitemap.xml</span><br><span class="line">baidusitemap:</span><br><span class="line">  path: baidusitemap.xml</span><br></pre></td></tr></table></figure>
 
 <p>安装完成后执行<code>hexo g</code>，即会在<code>blog\public</code>目录下生成<code>sitemap.xml和baidusitemap.xml</code>。</p>
-<p>**3. </p>
+<h2 id="添加蜘蛛协议"><a href="#添加蜘蛛协议" class="headerlink" title="添加蜘蛛协议"></a>添加蜘蛛协议</h2><p>在站点<code>source</code>文件夹下新建<code>robots.txt</code>文件，文件内容如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">User-agent: *</span><br><span class="line">Allow: /</span><br><span class="line">Allow: /archives/</span><br><span class="line">Allow: /categories/</span><br><span class="line">Allow: /tags/ </span><br><span class="line">Allow: /awesome/ </span><br><span class="line">Disallow: /js/</span><br><span class="line">Disallow: /css/</span><br><span class="line">Disallow: /images/</span><br><span class="line">Disallow: /fonts/</span><br><span class="line"></span><br><span class="line">Sitemap: https:xinyufeng.net/sitemap.xml</span><br><span class="line">Sitemap: https:xinyufeng.net/baidusitemap.xml</span><br></pre></td></tr></table></figure>
+
+<p><code>Allow</code>字段的值即为允许搜索引擎爬区的内容，可以对应到主题配置文件中的<code>menu</code>目录配置，如果菜单栏还有其他选项都可以按照格式自行添加，<code>Disallow</code>字段的值则为拒绝搜索引擎爬区的内容。</p>
+<p>需要将<code>https:xinyufeng.net</code>改成自己的域名。</p>
+<h2 id="百度主动提交"><a href="#百度主动提交" class="headerlink" title="百度主动提交"></a>百度主动提交</h2><ol>
+<li>百度也可以主动提交网址。这种方法需要安装<code>hexo</code>插件:</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-baidu-url-submit --save</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>插件安装成功后在<code>blog\_config.yml</code>配置文件中加入一下配置:</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">baidu_url_submit:</span><br><span class="line">  count: 3 <span class="comment">## 比如3，代表提交最新的三个链接</span></span><br><span class="line">  host: https://hoxis.github.io <span class="comment">## 在百度站长平台中注册的域名</span></span><br><span class="line">  token: your_token <span class="comment">## 请注意这是您的秘钥， 请不要发布在公众仓库里!</span></span><br><span class="line">  path: baidu_urls.txt <span class="comment">## 文本文档的地址， 新链接会保存在此文本文档里</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://image.sunluomeng.top/FsC348xGbzQCaUlXIWuVP4UgNIxe" alt="提示"></p>
+<p><strong>以上操作切记要修改站点的URL地址，修改成你自己的</strong></p>
+<ol start="3">
+<li></li>
+</ol>
 <h1 id="Hexo性能优化"><a href="#Hexo性能优化" class="headerlink" title="Hexo性能优化"></a><code>Hexo</code>性能优化</h1>]]></content>
       <categories>
         <category>blog</category>
