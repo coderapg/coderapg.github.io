@@ -16,7 +16,7 @@
 
 
 <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/lib/pace/pace-theme-center-simple.min.css">
+  <link rel="stylesheet" href="/lib/pace/pace-theme-flash.min.css">
   <script src="/lib/pace/pace.min.js"></script>
 
 <script id="hexo-configurations">
@@ -24,12 +24,12 @@
     var CONFIG = {"hostname":"coderapg.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="前言本文旨在记录一下我通过搭建Hexo个人博客，并将其部署在Github上面的过程中所做的步骤和找到的一些外链资源整理下来，也供我在以后的使用中能够快速学习和参考同时也希望能够给大家带来帮助。需要看更详细或者官方文档的可以点击Hexo官方文档进行查看。 Hexo安装前提：">
+  <meta name="description" content="前言本文旨在记录一下我通过搭建Hexo个人博客，并将其部署在Github上面的过程中所做的步骤和找到的一些外链资源整理下来，也供我在以后的使用中能够快速学习和参考同时也希望能够给大家带来帮助。需要看更详细或者官方文档的可以点击Hexo官方文档进行查看。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="基于Hexo+Github创建个人博客">
 <meta property="og:url" content="https://coderapg.github.io/2021/01/30/%E5%9F%BA%E4%BA%8EHexo+Github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/index.html">
 <meta property="og:site_name" content="会发光の小虾米">
-<meta property="og:description" content="前言本文旨在记录一下我通过搭建Hexo个人博客，并将其部署在Github上面的过程中所做的步骤和找到的一些外链资源整理下来，也供我在以后的使用中能够快速学习和参考同时也希望能够给大家带来帮助。需要看更详细或者官方文档的可以点击Hexo官方文档进行查看。 Hexo安装前提：">
+<meta property="og:description" content="前言本文旨在记录一下我通过搭建Hexo个人博客，并将其部署在Github上面的过程中所做的步骤和找到的一些外链资源整理下来，也供我在以后的使用中能够快速学习和参考同时也希望能够给大家带来帮助。需要看更详细或者官方文档的可以点击Hexo官方文档进行查看。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://z3.ax1x.com/2021/06/02/2KvXBF.png">
 <meta property="og:image" content="https://z3.ax1x.com/2021/06/02/2Kx991.png">
@@ -42,18 +42,14 @@
 <meta property="og:image" content="https://z3.ax1x.com/2021/06/02/2KxPc6.png">
 <meta property="og:image" content="https://z3.ax1x.com/2021/06/02/2KxknO.png">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/2352140-67c6e1edb5695035.PNG?imageMogr2/auto-orient/strip%7CimageView2/2/w/630/format/webp">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200628235024881.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5bGwxOTk4MDgxMg==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/2020062823574295.png">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200629000231668.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5bGwxOTk4MDgxMg==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200629000324285.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5bGwxOTk4MDgxMg==,size_16,color_FFFFFF,t_70">
-<meta property="og:image" content="https://img-blog.csdnimg.cn/20200629000538313.png">
 <meta property="og:image" content="https://images2.pianshen.com/418/27/2706331134804d633d5e69578ecf6e3a.png">
 <meta property="og:image" content="https://images1.pianshen.com/23/d1/d147e09de41ce2cb098e643cf8c9e747.png">
 <meta property="og:image" content="https://z3.ax1x.com/2021/06/02/2KxeNd.png">
 <meta property="og:image" content="https://z3.ax1x.com/2021/06/02/2Kxm4A.png">
+<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/5308475-f26f21e2f2b34e18.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/662/format/webp">
+<meta property="og:image" content="https://jiyali.github.io/2019/04/15/hexo-next-%E9%83%A8%E7%BD%B2%E5%90%84%E7%A7%8D%E7%82%AB%E9%85%B7%E5%8D%9A%E5%AE%A2%E7%89%B9%E6%95%88/%E8%BF%9B%E5%BA%A6.png">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1059816-863cf504935099d2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/240/format/webp">
 <meta property="og:image" content="https://images1.pianshen.com/124/ad/ad01a69067477f054e63f745ff9a9fe4.png">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/5308475-f26f21e2f2b34e18.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/662/format/webp">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1059816-c1bb4ca62ce42419.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/220/format/webp">
 <meta property="og:image" content="https://jiyali.github.io/2019/04/15/hexo-next-%E9%83%A8%E7%BD%B2%E5%90%84%E7%A7%8D%E7%82%AB%E9%85%B7%E5%8D%9A%E5%AE%A2%E7%89%B9%E6%95%88/koharu.gif">
 <meta property="og:image" content="https://image-static.segmentfault.com/422/522/4225223200-5c47cdfb484d3_fix732">
@@ -61,7 +57,7 @@
 <meta property="og:image" content="https://image-static.segmentfault.com/128/364/1283643276-5c47cdfb503f3_fix732">
 <meta property="og:image" content="https://image-static.segmentfault.com/237/250/237250186-5c47cdfb4bea1_fix732">
 <meta property="article:published_time" content="2021-01-30T08:08:41.000Z">
-<meta property="article:modified_time" content="2021-06-02T05:09:29.261Z">
+<meta property="article:modified_time" content="2021-06-03T10:00:20.207Z">
 <meta property="article:author" content="会发光の小虾米">
 <meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="Github">
@@ -213,6 +209,7 @@
     <i class="fa fa-arrow-up"></i>
     <span>0%</span>
   </div>
+  <div class="reading-progress-bar"></div>
 
 
     <main class="main">
@@ -257,7 +254,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-06-02 13:09:29" itemprop="dateModified" datetime="2021-06-02T13:09:29+08:00">2021-06-02</time>
+                <time title="修改时间：2021-06-03 18:00:20" itemprop="dateModified" datetime="2021-06-03T18:00:20+08:00">2021-06-03</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -296,14 +293,14 @@
                 <i class="fa fa-file-word-o"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>22k</span>
+              <span>24k</span>
             </span>
             <span class="post-meta-item" title="阅读时长">
               <span class="post-meta-item-icon">
                 <i class="fa fa-clock-o"></i>
               </span>
                 <span class="post-meta-item-text">阅读时长 &asymp;</span>
-              <span>20 分钟</span>
+              <span>22 分钟</span>
             </span>
 
         </div>
@@ -316,9 +313,9 @@
 
       
         <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>本文旨在记录一下我通过搭建<code>Hexo</code>个人博客，并将其部署在<code>Github</code>上面的过程中所做的步骤和找到的一些外链资源整理下来，也供我在以后的使用中能够快速学习和参考同时也希望能够给大家带来帮助。需要看更详细或者官方文档的可以点击<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">Hexo官方文档</a>进行查看。</p>
-<p><strong>Hexo安装前提：</strong></p>
 <span id="more"></span>
 
+<p><strong>Hexo安装前提：</strong></p>
 <p>安装<code>Hexo</code>非常简单，但是在安装<code>Hexo</code>之前，我们需要预先：</p>
 <ol>
 <li>安装<code>Node.js</code></li>
@@ -479,10 +476,6 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文件标题</span><br><span class="line">date: 2021-01-30 16:08:41</span><br><span class="line">tags:</span><br><span class="line">   - 导航</span><br><span class="line">   - 分享</span><br><span class="line">categories: 前端</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
 <h2 id="Markdown的基本使用与语法"><a href="#Markdown的基本使用与语法" class="headerlink" title="Markdown的基本使用与语法"></a><code>Markdown</code>的基本使用与语法</h2><p>详细语法<a target="_blank" rel="noopener" href="http://markdown.p2hp.com/">参考文献</a></p>
 <p>下载<code>markdown</code>或使用代码编辑器打开创建的文章。这里推荐使用<a target="_blank" rel="noopener" href="https://code.visualstudio.com/">VSCode</a>打开，或使用<a target="_blank" rel="noopener" href="https://www.typora.io/">Typora</a>打开进行编辑。</p>
-<h2 id="开启打赏功能"><a href="#开启打赏功能" class="headerlink" title="开启打赏功能"></a>开启打赏功能</h2><p>打开<code>next\_config.yml</code>文件，找到<code>reward_settings</code></p>
-<p>当<code>enable: false</code>时，隐藏打赏功能，当<code>enable: true</code>时，开启打赏功能。</p>
-<p>当<code>animation: true</code>时，当鼠标经过<code>xx支付</code>时，文字会有动画效果。</p>
-<p>打开<code>next\_config.yml</code>文件，找到<code>reward_settings:</code>下面的<code>enable: false</code>改为<code>enable: true</code>，同时<code>reward:</code>下面对应的链接也要设置对应的收钱码。</p>
 <h2 id="首页文章设置文章摘要和截断"><a href="#首页文章设置文章摘要和截断" class="headerlink" title="首页文章设置文章摘要和截断"></a>首页文章设置文章摘要和截断</h2><p><strong>方法1：在文章中使用<!-- more -->手动进行截断(<code>Hexo</code>推荐的方法)</strong></p>
 <p>在文章中使用<code>&lt;!-- more --&gt;</code>，那么<code>&lt;!-- more --&gt;</code>之前的文字将会被视为摘要。首页中将只出现<code>&lt;!-- more --&gt;</code>之前的文字，同时这部分文字也会出现在正文之中。</p>
 <p>例如：</p>
@@ -507,32 +500,16 @@
 <p>打开<code>\themes\next\source\css\_custom\custom.styl</code>,向里面加入：(颜色可以自己定义)</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Custom styles.</span></span><br><span class="line">code &#123;</span><br><span class="line">    color: <span class="comment">#ff7600;</span></span><br><span class="line">    background: <span class="comment">#fbf7f8;</span></span><br><span class="line">    margin: 2px;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment"># 大代码块的自定义样式</span></span><br><span class="line">.highlight, pre &#123;</span><br><span class="line">    margin: 5px 0;</span><br><span class="line">    padding: 5px;</span><br><span class="line">    border-radius: 3px;</span><br><span class="line">&#125;</span><br><span class="line">.highlight, code, pre &#123;</span><br><span class="line">    border: 1px solid <span class="comment">#d6d6d6;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h2 id="添加动态背景"><a href="#添加动态背景" class="headerlink" title="添加动态背景"></a>添加动态背景</h2><p>打开<code>next\_config.yml</code>，找到如下代码，值改为true，试试哪一款是你喜欢的，只修改一个即可。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Canvas-nest</span></span><br><span class="line">canvas_nest: <span class="literal">false</span></span><br><span class="line"><span class="comment"># three_waves</span></span><br><span class="line">three_waves: <span class="literal">false</span></span><br><span class="line"><span class="comment"># canvas_lines</span></span><br><span class="line">canvas_lines: <span class="literal">false</span></span><br><span class="line"><span class="comment"># canvas_sphere</span></span><br><span class="line">canvas_sphere: <span class="literal">false</span></span><br></pre></td></tr></table></figure>
-
-<p>但上面情况对我来说无用，没有预期效果，<a target="_blank" rel="noopener" href="https://www.cnblogs.com/Luweir/p/14147344.html">解决方案</a>，步骤如下：</p>
-<ol>
-<li>这几个东西我无论设置哪些个为true，都调不出动态背景：</li>
+<h2 id="添加动态背景"><a href="#添加动态背景" class="headerlink" title="添加动态背景"></a>添加动态背景</h2><ol>
+<li>打开<code>blog</code>目录，右键打开<code>Git Bash Here</code>，复制粘贴下面代码到<code>Git</code>中回车：</li>
 </ol>
-<p><img src="/images/loading.gif" data-original="https://img-blog.csdnimg.cn/20200628235024881.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5bGwxOTk4MDgxMg==,size_16,color_FFFFFF,t_70" alt="参考文献"></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/theme-next/theme-next-canvas-nest themes/next/<span class="built_in">source</span>/lib/canvas-nest</span><br></pre></td></tr></table></figure>
+
 <ol start="2">
-<li>首先看这里：</li>
+<li>在<code>blog\themes\next\_config.yml</code>文件中搜索<code>canvas-nest</code>字段，并更改其中的配置。配置如下：</li>
 </ol>
-<p><img src="/images/loading.gif" data-original="https://img-blog.csdnimg.cn/2020062823574295.png" alt="参考文献"></p>
-<p>表示这三个动态背景依赖于<code>git克隆(clone)</code>才能使用。</p>
-<ol start="3">
-<li>然后进入到<code>next</code>文件夹下，输入:</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/theme-next/theme-next-three</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">canvas_nest: </span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  onmobile: <span class="literal">true</span></span><br><span class="line">  color: <span class="string">&#x27;0,0,255&#x27;</span></span><br><span class="line">  opacity: 0.5</span><br><span class="line">  zIndex: -1</span><br><span class="line">  count: 99</span><br></pre></td></tr></table></figure>
 
-<p>下载后就会有一个这样的文件出现在next文件夹中：</p>
-<p><img src="/images/loading.gif" data-original="https://img-blog.csdnimg.cn/20200629000231668.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5bGwxOTk4MDgxMg==,size_16,color_FFFFFF,t_70" alt="图片"></p>
-<p>只需要将此文件重命名为<code>three</code>，然后剪贴到<code>next\source\lib</code>文件下下面即可：</p>
-<p><img src="/images/loading.gif" data-original="https://img-blog.csdnimg.cn/20200629000324285.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3d5bGwxOTk4MDgxMg==,size_16,color_FFFFFF,t_70" alt="图片"></p>
-<ol start="4">
-<li>依赖包已经克隆了，之后就只用改之前那几个参数就能调选择你喜欢的动态背景了：</li>
-</ol>
-<p><img src="/images/loading.gif" data-original="https://img-blog.csdnimg.cn/20200629000538313.png" alt="图片"></p>
 <h2 id="给博客添加fork-Github"><a href="#给博客添加fork-Github" class="headerlink" title="给博客添加fork Github"></a>给博客添加<code>fork Github</code></h2><p>实现效果展示：</p>
 <p><img src="/images/loading.gif" data-original="https://images2.pianshen.com/418/27/2706331134804d633d5e69578ecf6e3a.png" alt="图片"></p>
 <p><strong>hexo在右上角或者左上角实现<code>fork me on github</code>步骤：</strong></p>
@@ -546,6 +523,10 @@
 <h2 id="修改文章内链接样式"><a href="#修改文章内链接样式" class="headerlink" title="修改文章内链接样式"></a>修改文章内链接样式</h2><p>打开<code>next\source\css\_common\components\post\post.styl</code>文件，添加如下代码：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.post-body p a &#123;</span><br><span class="line">  color: purple;</span><br><span class="line">  &amp;:hover &#123;</span><br><span class="line">    color: #ff6700;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<h2 id="开启打赏功能"><a href="#开启打赏功能" class="headerlink" title="开启打赏功能"></a>开启打赏功能</h2><p>打开<code>next\_config.yml</code>文件，找到<code>reward_settings</code></p>
+<p>当<code>enable: false</code>时，隐藏打赏功能，当<code>enable: true</code>时，开启打赏功能。</p>
+<p>当<code>animation: true</code>时，当鼠标经过<code>xx支付</code>时，文字会有动画效果。</p>
+<p>打开<code>next\_config.yml</code>文件，找到<code>reward_settings:</code>下面的<code>enable: false</code>改为<code>enable: true</code>，同时<code>reward:</code>下面对应的链接也要设置对应的收钱码。</p>
 <h2 id="修改文章底部带-的标签"><a href="#修改文章底部带-的标签" class="headerlink" title="修改文章底部带#的标签"></a>修改文章底部带<code>#</code>的标签</h2><p><a target="_blank" rel="noopener" href="http://www.fontawesome.com.cn/faicons/">图标库</a></p>
 <p>打开<code>next\layout\_macro\post.swig</code>文件，搜索<code>tag</code>关键字，找到<code>&lt;a href=&quot;&#123;&#123; url_for(tag.path) &#125;&#125;&quot; rel=&quot;tag&quot;&gt;# &#123;&#123; tag.name &#125;&#125;&lt;/a&gt;</code>把里面的<code>#</code>替换成<code>&lt;i class=&quot;fa fa-gratipay&quot;&gt;&lt;/i&gt;</code>即可。</p>
 <h2 id="增加Valine评论功能"><a href="#增加Valine评论功能" class="headerlink" title="增加Valine评论功能"></a>增加<code>Valine</code>评论功能</h2><p>首先去<a target="_blank" rel="noopener" href="https://leancloud.cn/">LeanCloud</a>注册登录。点击应用设置(齿轮形状)，点击<code>应用Keys</code>找到<code>AppID</code>和<code>AppKey</code>，复制并粘贴到<code>next\_config.yml</code>文件中：</p>
@@ -588,22 +569,6 @@
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 添加字数统计和阅读时长</span></span><br><span class="line">symbols_count_time:</span><br><span class="line">  separated_meta: <span class="literal">true</span></span><br><span class="line">  item_text_post: <span class="literal">true</span></span><br><span class="line">  item_text_total: <span class="literal">true</span></span><br><span class="line">  awl: 4</span><br><span class="line">  wpm: 275</span><br></pre></td></tr></table></figure>
 
-<h2 id="添加标签云"><a href="#添加标签云" class="headerlink" title="添加标签云"></a>添加标签云</h2><p><img src="/images/loading.gif" data-original="https://upload-images.jianshu.io/upload_images/1059816-863cf504935099d2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/240/format/webp" alt="图片"></p>
-<ol>
-<li>在<code>blog</code>目录下右键空白处打开<code>Git</code>输入下列代码，回车执行</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-tag-cloud --save</span><br></pre></td></tr></table></figure>
-
-<ol start="2">
-<li>打开<code>blog\_confiig.yml</code>文件，在文件中添加下列代码片段：</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># hexo-tag-cloud 标签云 | see https://github.com/MikeCoder/hexo-tag-cloud</span></span><br><span class="line">tag_cloud:</span><br><span class="line">  textFont: Trebuchet MS, Helvetica <span class="comment"># 字体</span></span><br><span class="line">  textColor: <span class="string">&#x27;#555&#x27;</span> <span class="comment"># 字体颜色</span></span><br><span class="line">  textHeight: 25 <span class="comment"># 字体高度</span></span><br><span class="line">  outlineColor: <span class="string">&#x27;#E2E1D1&#x27;</span> <span class="comment"># 字体背景色</span></span><br><span class="line">  maxSpeed: 0.1 <span class="comment"># 标签云最大移动速度</span></span><br></pre></td></tr></table></figure>
-
-<ol start="3">
-<li>打开<code>next\layout\_macro\sidebar.swig</code>文件，找到类名为<code>sidebar-inner</code>的<code>div</code>，在该元素中最后位置添加下列代码片段：</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 添加标签云 --&gt;  </span><br><span class="line">&#123;% <span class="keyword">if</span> site.tags.length &gt; 1 %&#125;</span><br><span class="line">  &lt;script <span class="built_in">type</span>=<span class="string">&quot;text/javascript&quot;</span> charset=<span class="string">&quot;utf-8&quot;</span> src=<span class="string">&quot;/js/tagcloud.js&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line">  &lt;script <span class="built_in">type</span>=<span class="string">&quot;text/javascript&quot;</span> charset=<span class="string">&quot;utf-8&quot;</span> src=<span class="string">&quot;/js/tagcanvas.js&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line">  &lt;div class=<span class="string">&quot;widget-wrap&quot;</span>&gt;</span><br><span class="line">      &lt;h3 class=<span class="string">&quot;widget-title&quot;</span> style=<span class="string">&quot;background: #eaeaea;&quot;</span>&gt;Tag Cloud&lt;/h3&gt;</span><br><span class="line">      &lt;div id=<span class="string">&quot;myCanvasContainer&quot;</span> class=<span class="string">&quot;widget tagcloud&quot;</span>&gt;</span><br><span class="line">          &lt;canvas width=<span class="string">&quot;250&quot;</span> height=<span class="string">&quot;250&quot;</span> id=<span class="string">&quot;resCanvas&quot;</span> style=<span class="string">&quot;width=100%&quot;</span>&gt;</span><br><span class="line">              &#123;&#123; list_tags() &#125;&#125;</span><br><span class="line">          &lt;/canvas&gt;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
-
 <h2 id="添加RSS功能"><a href="#添加RSS功能" class="headerlink" title="添加RSS功能"></a>添加RSS功能</h2><ol>
 <li>找到<code>blog</code>主目录文件，右键 <code>Git Bash Here</code>并执行 <code>npm install --save hexo-generator-feed</code>。安装结束后，打开<code>blog\_config.yml</code>，在末尾添加代码：</li>
 </ol>
@@ -625,18 +590,6 @@
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 页面点击小红心 --&gt;</span><br><span class="line">&lt;script <span class="built_in">type</span>=<span class="string">&quot;text/javascript&quot;</span> src=<span class="string">&quot;/js/src/clicklove.js&quot;</span>&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
 
-<h2 id="添加音乐"><a href="#添加音乐" class="headerlink" title="添加音乐"></a>添加音乐</h2><p><a target="_blank" rel="noopener" href="https://www.pianshen.com/article/6772705615/">参考文献</a></p>
-<ol>
-<li>修改 <code>blog\themes\next\layout\_macro\sidebar.swig</code> 文件，添加下列代码放置于图中的位置：</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 添加音乐播放器 --&gt; </span><br><span class="line">&lt;div&gt;</span><br><span class="line">  &#123;% <span class="keyword">if</span> theme.background_music %&#125;</span><br><span class="line">    &lt;iframe frameborder=<span class="string">&quot;no&quot;</span> border=<span class="string">&quot;0&quot;</span> marginwidth=<span class="string">&quot;0&quot;</span> marginheight=<span class="string">&quot;0&quot;</span> width=<span class="string">&quot;210&quot;</span> height=<span class="string">&quot;110&quot;</span> src=<span class="string">&quot;&#123;&#123; theme.background_music &#125;&#125;&quot;</span>&gt;&lt;/iframe&gt;</span><br><span class="line">  &#123;% endif %&#125;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-
-<p><img src="/images/loading.gif" data-original="https://images1.pianshen.com/124/ad/ad01a69067477f054e63f745ff9a9fe4.png" alt="图片"></p>
-<ol start="2">
-<li>我用的是网易云的外链歌单，<a target="_blank" rel="noopener" href="https://www.pianshen.com/article/6772705615/">参考文献</a>，把外链的歌单在<code>blog\hemes\next\_config.yml</code>配置文件中添加歌单地址配置:</li>
-</ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 歌单链接：</span></span><br><span class="line">background_music: //music.163.com/outchain/player?<span class="built_in">type</span>=0&amp;id=6784491855&amp;auto=1&amp;height=66</span><br></pre></td></tr></table></figure>
-
 <h2 id="网站底部字数统计"><a href="#网站底部字数统计" class="headerlink" title="网站底部字数统计"></a>网站底部字数统计</h2><p><img src="/images/loading.gif" data-original="https://upload-images.jianshu.io/upload_images/5308475-f26f21e2f2b34e18.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/662/format/webp" alt="图片"></p>
 <ol>
 <li>切换到<code>blog</code>根目录下，然后运行如下代码:</li>
@@ -652,6 +605,8 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Put your favicon.ico into `hexo-site/source/` directory.</span></span><br><span class="line">favicon: /favicon.ico</span><br></pre></td></tr></table></figure>
 
 <h2 id="修改网页底部跳动的心"><a href="#修改网页底部跳动的心" class="headerlink" title="修改网页底部跳动的心"></a>修改网页底部跳动的心</h2><p>打开<code>next\_config.yml</code>文件，找到<code>footer</code>里面的<code>icon</code>，<code>name</code>修改为<code>heartbeat</code>，动画<code>animated: true</code>，<code>color</code>自定义。</p>
+<h2 id="显示当前浏览进度"><a href="#显示当前浏览进度" class="headerlink" title="显示当前浏览进度"></a>显示当前浏览进度</h2><p><img src="/images/loading.gif" data-original="https://jiyali.github.io/2019/04/15/hexo-next-%E9%83%A8%E7%BD%B2%E5%90%84%E7%A7%8D%E7%82%AB%E9%85%B7%E5%8D%9A%E5%AE%A2%E7%89%B9%E6%95%88/%E8%BF%9B%E5%BA%A6.png" alt="图片"></p>
+<p>打开<code>blog\themes\next\ _config.yml</code>文件，更改<code>scrollpercent: true</code>。</p>
 <h2 id="博文置顶"><a href="#博文置顶" class="headerlink" title="博文置顶"></a>博文置顶</h2><ol>
 <li>找到<code>blog\node_modules\hexo-generator-index\lib\generator.js</code>文件把下列代码替换到文件内：</li>
 </ol>
@@ -661,6 +616,34 @@
 <li>在文章中添加<code>top</code>值，数值越大文章越靠前，如:</li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 解决Charles乱码问题</span><br><span class="line">date: 2017-05-22 22:45:48</span><br><span class="line">tags: 技巧</span><br><span class="line">categories: 技巧</span><br><span class="line">copyright: <span class="literal">true</span></span><br><span class="line">top: 100</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+
+<h2 id="添加标签云"><a href="#添加标签云" class="headerlink" title="添加标签云"></a>添加标签云</h2><p><img src="/images/loading.gif" data-original="https://upload-images.jianshu.io/upload_images/1059816-863cf504935099d2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/240/format/webp" alt="图片"></p>
+<ol>
+<li>在<code>blog</code>目录下右键空白处打开<code>Git</code>输入下列代码，回车执行</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-tag-cloud --save</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>打开<code>blog\_confiig.yml</code>文件，在文件中添加下列代码片段：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># hexo-tag-cloud 标签云 | see https://github.com/MikeCoder/hexo-tag-cloud</span></span><br><span class="line">tag_cloud:</span><br><span class="line">  textFont: Trebuchet MS, Helvetica <span class="comment"># 字体</span></span><br><span class="line">  textColor: <span class="string">&#x27;#555&#x27;</span> <span class="comment"># 字体颜色</span></span><br><span class="line">  textHeight: 25 <span class="comment"># 字体高度</span></span><br><span class="line">  outlineColor: <span class="string">&#x27;#E2E1D1&#x27;</span> <span class="comment"># 字体背景色</span></span><br><span class="line">  maxSpeed: 0.1 <span class="comment"># 标签云最大移动速度</span></span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>打开<code>next\layout\_macro\sidebar.swig</code>文件，找到类名为<code>sidebar-inner</code>的<code>div</code>，在该元素中最后位置添加下列代码片段：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 添加标签云 --&gt;  </span><br><span class="line">&#123;% <span class="keyword">if</span> site.tags.length &gt; 1 %&#125;</span><br><span class="line">  &lt;script <span class="built_in">type</span>=<span class="string">&quot;text/javascript&quot;</span> charset=<span class="string">&quot;utf-8&quot;</span> src=<span class="string">&quot;/js/tagcloud.js&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line">  &lt;script <span class="built_in">type</span>=<span class="string">&quot;text/javascript&quot;</span> charset=<span class="string">&quot;utf-8&quot;</span> src=<span class="string">&quot;/js/tagcanvas.js&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line">  &lt;div class=<span class="string">&quot;widget-wrap&quot;</span>&gt;</span><br><span class="line">      &lt;h3 class=<span class="string">&quot;widget-title&quot;</span> style=<span class="string">&quot;background: #eaeaea;&quot;</span>&gt;Tag Cloud&lt;/h3&gt;</span><br><span class="line">      &lt;div id=<span class="string">&quot;myCanvasContainer&quot;</span> class=<span class="string">&quot;widget tagcloud&quot;</span>&gt;</span><br><span class="line">          &lt;canvas width=<span class="string">&quot;250&quot;</span> height=<span class="string">&quot;250&quot;</span> id=<span class="string">&quot;resCanvas&quot;</span> style=<span class="string">&quot;width=100%&quot;</span>&gt;</span><br><span class="line">              &#123;&#123; list_tags() &#125;&#125;</span><br><span class="line">          &lt;/canvas&gt;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="添加音乐"><a href="#添加音乐" class="headerlink" title="添加音乐"></a>添加音乐</h2><p><a target="_blank" rel="noopener" href="https://www.pianshen.com/article/6772705615/">参考文献</a></p>
+<ol>
+<li>修改 <code>blog\themes\next\layout\_macro\sidebar.swig</code> 文件，添加下列代码放置于图中的位置：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 添加音乐播放器 --&gt; </span><br><span class="line">&lt;div&gt;</span><br><span class="line">  &#123;% <span class="keyword">if</span> theme.background_music %&#125;</span><br><span class="line">    &lt;iframe frameborder=<span class="string">&quot;no&quot;</span> border=<span class="string">&quot;0&quot;</span> marginwidth=<span class="string">&quot;0&quot;</span> marginheight=<span class="string">&quot;0&quot;</span> width=<span class="string">&quot;210&quot;</span> height=<span class="string">&quot;110&quot;</span> src=<span class="string">&quot;&#123;&#123; theme.background_music &#125;&#125;&quot;</span>&gt;&lt;/iframe&gt;</span><br><span class="line">  &#123;% endif %&#125;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+
+<p><img src="/images/loading.gif" data-original="https://images1.pianshen.com/124/ad/ad01a69067477f054e63f745ff9a9fe4.png" alt="图片"></p>
+<ol start="2">
+<li>我用的是网易云的外链歌单，<a target="_blank" rel="noopener" href="https://www.pianshen.com/article/6772705615/">参考文献</a>，把外链的歌单在<code>blog\hemes\next\_config.yml</code>配置文件中添加歌单地址配置:</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 歌单链接：</span></span><br><span class="line">background_music: //music.163.com/outchain/player?<span class="built_in">type</span>=0&amp;id=6784491855&amp;auto=1&amp;height=66</span><br></pre></td></tr></table></figure>
 
 <h2 id="添加粒子时钟特效"><a href="#添加粒子时钟特效" class="headerlink" title="添加粒子时钟特效"></a>添加粒子时钟特效</h2><p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/c83542ac8193">参考文献</a></p>
 <p><img src="/images/loading.gif" data-original="https://upload-images.jianshu.io/upload_images/1059816-c1bb4ca62ce42419.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/220/format/webp" alt="图片"></p>
@@ -688,12 +671,25 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;%- <span class="keyword">if</span> theme.diy_clock.clock %&#125;</span><br><span class="line">  &#123;%- include <span class="string">&#x27;../_custom/clock.swig&#x27;</span> %&#125;</span><br><span class="line">&#123;%- endif %&#125;</span><br></pre></td></tr></table></figure>
 
 <p>当主题配置中的<code>diy_clock.clock</code>为<code>true</code>时，页面加载粒子时钟。</p>
-<h2 id="为博客添加萌宠"><a href="#为博客添加萌宠" class="headerlink" title="为博客添加萌宠"></a>为博客添加萌宠</h2><p><img src="/images/loading.gif" data-original="https://jiyali.github.io/2019/04/15/hexo-next-%E9%83%A8%E7%BD%B2%E5%90%84%E7%A7%8D%E7%82%AB%E9%85%B7%E5%8D%9A%E5%AE%A2%E7%89%B9%E6%95%88/koharu.gif" alt="图片"></p>
+<h2 id="为博客添加看板娘效果"><a href="#为博客添加看板娘效果" class="headerlink" title="为博客添加看板娘效果"></a>为博客添加看板娘效果</h2><p><a target="_blank" rel="noopener" href="https://blog.csdn.net/wang_123_zy/article/details/87181892">看板娘模型预览</a></p>
+<p><img src="/images/loading.gif" data-original="https://jiyali.github.io/2019/04/15/hexo-next-%E9%83%A8%E7%BD%B2%E5%90%84%E7%A7%8D%E7%82%AB%E9%85%B7%E5%8D%9A%E5%AE%A2%E7%89%B9%E6%95%88/koharu.gif" alt="图片"></p>
 <p>先给出<a target="_blank" rel="noopener" href="https://github.com/EYHN/hexo-helper-live2d">hexo-helper-live2d</a>的<code>Github</code>链接</p>
 <ol>
 <li>安装并配置 hexo-helper-live2d</li>
 </ol>
 <p>找到<code>blog</code>文件，右键<code>Git Bash Here</code>打开并执行<code>npm install hexo-helper-live2d --save</code></p>
+<ol start="2">
+<li><p>到<a target="_blank" rel="noopener" href="https://huaji8.top/post/live2d-plugin-2.0">插件作者博客</a>挑选你喜欢的萌物，记录下她的名字</p>
+</li>
+<li><p>以<code>koharu</code>为例，<code>blog</code>目录下继续执行下列代码:</p>
+</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install live2d-widget-model-koharu --save</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>打开<code>blog\_config.yml</code>文件，添加如下代码：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 看板娘</span></span><br><span class="line"><span class="comment"># Live2D</span></span><br><span class="line"><span class="comment">## https://github.com/EYHN/hexo-helper-live2d</span></span><br><span class="line">live2d:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  scriptFrom: <span class="built_in">local</span></span><br><span class="line">  pluginRootPath: live2dw/</span><br><span class="line">  pluginJsPath: lib/</span><br><span class="line">  pluginModelPath: assets/</span><br><span class="line">  tagMode: <span class="literal">false</span></span><br><span class="line">  debug: <span class="literal">false</span></span><br><span class="line">  model:</span><br><span class="line">     use: live2d-widget-model-koharu</span><br><span class="line">  display:</span><br><span class="line">     position: right</span><br><span class="line">     width: 150</span><br><span class="line">     height: 300</span><br><span class="line">  mobile:</span><br><span class="line">     show: <span class="literal">true</span></span><br></pre></td></tr></table></figure>
 <h2 id="创建404页面"><a href="#创建404页面" class="headerlink" title="创建404页面"></a>创建404页面</h2><p>当我们访问博客时，后面<code>url</code>地址不正确，则会出现<code>404</code>页面。我们这里是为了能够美化上述出现的<code>404page</code>:</p>
 <ol>
 <li>在<code>blog\source</code>创建404页面，如下代码：</li>
@@ -741,7 +737,20 @@
 </blockquote>
 </li>
 </ol>
+<h2 id="博文压缩"><a href="#博文压缩" class="headerlink" title="博文压缩"></a>博文压缩</h2><ol>
+<li>在<code>blog</code>下执行以下命令：</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install gulp -g</span><br><span class="line">npm install gulp-minify-css gulp-uglify gulp-htmlmin gulp-htmlclean gulp --save</span><br></pre></td></tr></table></figure>
 
+<ol start="2">
+<li>在<code>blog</code>文件下新建<code>gulpfile.js</code>文件，并在新建文件<code>gulpfile.js</code>文件中添加下列代码:</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">var gulp = require(<span class="string">&#x27;gulp&#x27;</span>);</span><br><span class="line">var minifycss = require(<span class="string">&#x27;gulp-minify-css&#x27;</span>);</span><br><span class="line">var uglify = require(<span class="string">&#x27;gulp-uglify&#x27;</span>);</span><br><span class="line">var htmlmin = require(<span class="string">&#x27;gulp-htmlmin&#x27;</span>);</span><br><span class="line">var htmlclean = require(<span class="string">&#x27;gulp-htmlclean&#x27;</span>);</span><br><span class="line">// 压缩 public 目录 css</span><br><span class="line">gulp.task(<span class="string">&#x27;minify-css&#x27;</span>, <span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">    <span class="built_in">return</span> gulp.src(<span class="string">&#x27;./public/**/*.css&#x27;</span>)</span><br><span class="line">        .pipe(minifycss())</span><br><span class="line">        .pipe(gulp.dest(<span class="string">&#x27;./public&#x27;</span>));</span><br><span class="line">&#125;);</span><br><span class="line">// 压缩 public 目录 html</span><br><span class="line">gulp.task(<span class="string">&#x27;minify-html&#x27;</span>, <span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">  <span class="built_in">return</span> gulp.src(<span class="string">&#x27;./public/**/*.html&#x27;</span>)</span><br><span class="line">    .pipe(htmlclean())</span><br><span class="line">    .pipe(htmlmin(&#123;</span><br><span class="line">         removeComments: <span class="literal">true</span>,</span><br><span class="line">         minifyJS: <span class="literal">true</span>,</span><br><span class="line">         minifyCSS: <span class="literal">true</span>,</span><br><span class="line">         minifyURLs: <span class="literal">true</span>,</span><br><span class="line">    &#125;))</span><br><span class="line">    .pipe(gulp.dest(<span class="string">&#x27;./public&#x27;</span>))</span><br><span class="line">&#125;);</span><br><span class="line">// 压缩 public/js 目录 js</span><br><span class="line">gulp.task(<span class="string">&#x27;minify-js&#x27;</span>, <span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">    <span class="built_in">return</span> gulp.src(<span class="string">&#x27;./public/**/*.js&#x27;</span>)</span><br><span class="line">        .pipe(uglify())</span><br><span class="line">        .pipe(gulp.dest(<span class="string">&#x27;./public&#x27;</span>));</span><br><span class="line">&#125;);</span><br><span class="line">// 执行 gulp 命令时执行的任务</span><br><span class="line">gulp.task(<span class="string">&#x27;default&#x27;</span>, [</span><br><span class="line">    <span class="string">&#x27;minify-html&#x27;</span>,<span class="string">&#x27;minify-css&#x27;</span>,<span class="string">&#x27;minify-js&#x27;</span></span><br><span class="line">]);</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>执行<code>hexo g</code>完成后，续执行<code>gulp</code>。</li>
+</ol>
+<h2 id=""><a href="#" class="headerlink" title=""></a></h2>
     </div>
 
     
@@ -843,7 +852,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Node%E5%AE%89%E8%A3%85"><span class="nav-number">2.</span> <span class="nav-text">Node安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Git%E5%AE%89%E8%A3%85"><span class="nav-number">3.</span> <span class="nav-text">Git安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Github%E6%B3%A8%E5%86%8C%E5%8F%8A%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93"><span class="nav-number">4.</span> <span class="nav-text">Github注册及创建仓库</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#SSH%E9%85%8D%E7%BD%AE"><span class="nav-number">5.</span> <span class="nav-text">SSH配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AE%89%E8%A3%85Hexo"><span class="nav-number">6.</span> <span class="nav-text">安装Hexo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%8A%8A%E5%8D%9A%E5%AE%A2%E6%8E%A8%E9%80%81%E8%87%B3Github"><span class="nav-number">7.</span> <span class="nav-text">把博客推送至Github</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Next%E4%B8%BB%E9%A2%98"><span class="nav-number">8.</span> <span class="nav-text">Next主题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%87%E6%B3%A8"><span class="nav-number">8.1.</span> <span class="nav-text">备注</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Next%E4%B8%BB%E9%A2%98%E5%90%AF%E7%94%A8"><span class="nav-number">8.2.</span> <span class="nav-text">Next主题启用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9B%B4%E6%94%B9Next%E4%B8%BA%E4%B8%AD%E6%96%87"><span class="nav-number">8.3.</span> <span class="nav-text">更改Next为中文</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A2%9E%E5%8A%A0%E6%A0%87%E7%AD%BE%E9%A1%B5%E5%92%8C%E5%88%86%E7%B1%BB%E9%A1%B5"><span class="nav-number">8.4.</span> <span class="nav-text">增加标签页和分类页</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%BB%E9%A2%98%E6%A0%B7%E5%BC%8F%E7%9A%84%E6%9B%B4%E6%94%B9"><span class="nav-number">8.5.</span> <span class="nav-text">主题样式的更改</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9B%B4%E6%94%B9%E5%A4%B4%E5%83%8F%E5%8F%8A%E5%A4%B4%E5%83%8F%E6%A0%B7%E5%BC%8F%E8%AE%BE%E7%BD%AE"><span class="nav-number">8.6.</span> <span class="nav-text">更改头像及头像样式设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9B%B4%E6%94%B9%E6%A0%87%E9%A2%98%E5%92%8C%E4%BD%9C%E8%80%85%E5%8F%8A%E9%93%BE%E6%8E%A5"><span class="nav-number">8.7.</span> <span class="nav-text">更改标题和作者及链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%AF%E7%94%A8%E4%BE%A7%E8%BE%B9%E6%A0%8F%E7%A4%BE%E4%BA%A4%E9%93%BE%E6%8E%A5"><span class="nav-number">8.8.</span> <span class="nav-text">启用侧边栏社交链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%AF%E7%94%A8%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5"><span class="nav-number">8.9.</span> <span class="nav-text">启用友情链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0"><span class="nav-number">8.10.</span> <span class="nav-text">新建文章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Markdown%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E4%B8%8E%E8%AF%AD%E6%B3%95"><span class="nav-number">8.11.</span> <span class="nav-text">Markdown的基本使用与语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%80%E5%90%AF%E6%89%93%E8%B5%8F%E5%8A%9F%E8%83%BD"><span class="nav-number">8.12.</span> <span class="nav-text">开启打赏功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A6%96%E9%A1%B5%E6%96%87%E7%AB%A0%E8%AE%BE%E7%BD%AE%E6%96%87%E7%AB%A0%E6%91%98%E8%A6%81%E5%92%8C%E6%88%AA%E6%96%AD"><span class="nav-number">8.13.</span> <span class="nav-text">首页文章设置文章摘要和截断</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9-%E4%BB%A3%E7%A0%81%E5%9D%97%E5%8C%85%E8%A3%B9%E5%AD%97%E6%AE%B5%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A0%B7%E5%BC%8F"><span class="nav-number">8.14.</span> <span class="nav-text">修改&#96;&#96;代码块包裹字段自定义样式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E5%8A%A8%E6%80%81%E8%83%8C%E6%99%AF"><span class="nav-number">8.15.</span> <span class="nav-text">添加动态背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%99%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0fork-Github"><span class="nav-number">8.16.</span> <span class="nav-text">给博客添加fork Github</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E6%96%87%E7%AB%A0%E5%86%85%E9%93%BE%E6%8E%A5%E6%A0%B7%E5%BC%8F"><span class="nav-number">8.17.</span> <span class="nav-text">修改文章内链接样式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E6%96%87%E7%AB%A0%E5%BA%95%E9%83%A8%E5%B8%A6-%E7%9A%84%E6%A0%87%E7%AD%BE"><span class="nav-number">8.18.</span> <span class="nav-text">修改文章底部带#的标签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A2%9E%E5%8A%A0Valine%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD"><span class="nav-number">8.19.</span> <span class="nav-text">增加Valine评论功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A2%9E%E5%8A%A0%E6%9D%A5%E5%BF%85%E5%8A%9B%E8%AF%84%E8%AE%BA"><span class="nav-number">8.20.</span> <span class="nav-text">增加来必力评论</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A2%9E%E5%8A%A0Gitment%E8%AF%84%E8%AE%BA"><span class="nav-number">8.21.</span> <span class="nav-text">增加Gitment评论</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A2%9E%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD"><span class="nav-number">8.22.</span> <span class="nav-text">增加搜索功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A2%9E%E5%8A%A0%E4%B8%8D%E8%92%9C%E5%AD%90%E7%BB%9F%E8%AE%A1%E8%AE%BF%E9%97%AE%E9%87%8F%E5%8A%9F%E8%83%BD"><span class="nav-number">8.23.</span> <span class="nav-text">增加不蒜子统计访问量功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A2%9E%E5%8A%A0%E5%86%85%E5%AE%B9%E5%88%86%E4%BA%AB%E6%9C%8D%E5%8A%A1"><span class="nav-number">8.24.</span> <span class="nav-text">增加内容分享服务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A2%9E%E5%8A%A0%E5%8A%A0%E8%BD%BD%E6%95%88%E6%9E%9C"><span class="nav-number">8.25.</span> <span class="nav-text">增加加载效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%A0%81%E5%9D%97%E9%AB%98%E4%BA%AE%E6%95%88%E6%9E%9C"><span class="nav-number">8.26.</span> <span class="nav-text">设置代码块高亮效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9A%90%E8%97%8F%E5%BA%95%E9%83%A8%E7%9A%84%E5%BC%BA%E5%8A%9B%E9%A9%B1%E5%8A%A8"><span class="nav-number">8.27.</span> <span class="nav-text">隐藏底部的强力驱动</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E5%AD%97%E6%95%B0%E7%BB%9F%E8%AE%A1%E5%92%8C%E9%98%85%E8%AF%BB%E6%97%B6%E9%95%BF"><span class="nav-number">8.28.</span> <span class="nav-text">添加字数统计和阅读时长</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E6%A0%87%E7%AD%BE%E4%BA%91"><span class="nav-number">8.29.</span> <span class="nav-text">添加标签云</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0RSS%E5%8A%9F%E8%83%BD"><span class="nav-number">8.30.</span> <span class="nav-text">添加RSS功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E7%AB%A0%E6%9C%AB%E5%B0%BE%E6%B7%BB%E5%8A%A0%E2%80%9D%E6%9C%AC%E6%96%87%E7%BB%93%E6%9D%9F%E2%80%9D%E6%A0%87%E8%AE%B0"><span class="nav-number">8.31.</span> <span class="nav-text">文章末尾添加”本文结束”标记</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A2%9E%E5%8A%A0%E9%BC%A0%E6%A0%87%E7%82%B9%E5%87%BB%E7%89%B9%E6%95%88-%E5%BF%83%E5%9E%8B%E7%89%B9%E6%95%88"><span class="nav-number">8.32.</span> <span class="nav-text">增加鼠标点击特效-心型特效</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E9%9F%B3%E4%B9%90"><span class="nav-number">8.33.</span> <span class="nav-text">添加音乐</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BD%91%E7%AB%99%E5%BA%95%E9%83%A8%E5%AD%97%E6%95%B0%E7%BB%9F%E8%AE%A1"><span class="nav-number">8.34.</span> <span class="nav-text">网站底部字数统计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E7%BD%91%E7%AB%99%E7%9A%84%E5%9B%BE%E6%A0%87Favicon"><span class="nav-number">8.35.</span> <span class="nav-text">设置网站的图标Favicon</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E7%BD%91%E9%A1%B5%E5%BA%95%E9%83%A8%E8%B7%B3%E5%8A%A8%E7%9A%84%E5%BF%83"><span class="nav-number">8.36.</span> <span class="nav-text">修改网页底部跳动的心</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%9A%E6%96%87%E7%BD%AE%E9%A1%B6"><span class="nav-number">8.37.</span> <span class="nav-text">博文置顶</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E7%B2%92%E5%AD%90%E6%97%B6%E9%92%9F%E7%89%B9%E6%95%88"><span class="nav-number">8.38.</span> <span class="nav-text">添加粒子时钟特效</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E8%90%8C%E5%AE%A0"><span class="nav-number">8.39.</span> <span class="nav-text">为博客添加萌宠</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA404%E9%A1%B5%E9%9D%A2"><span class="nav-number">8.40.</span> <span class="nav-text">创建404页面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">8.41.</span> <span class="nav-text">总结</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo-SEO%E4%BC%98%E5%8C%96"><span class="nav-number">9.</span> <span class="nav-text">Hexo-SEO优化</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%99%BE%E5%BA%A6%E7%AB%99%E9%95%BF"><span class="nav-number">9.1.</span> <span class="nav-text">百度站长</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%99%BE%E5%BA%A6%E6%8F%90%E4%BA%A4%E9%93%BE%E6%8E%A5"><span class="nav-number">9.1.1.</span> <span class="nav-text">百度提交链接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%99%BE%E5%BA%A6%E7%AB%99%E9%95%BF%E5%B9%B3%E5%8F%B0%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E7%AE%A1%E7%90%86"><span class="nav-number">9.1.2.</span> <span class="nav-text">百度站长平台添加网站管理</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96"><span class="nav-number">10.</span> <span class="nav-text">Hexo性能优化</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%BE%E7%89%87%E6%87%92%E5%8A%A0%E8%BD%BD"><span class="nav-number">10.1.</span> <span class="nav-text">图片懒加载</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Node%E5%AE%89%E8%A3%85"><span class="nav-number">2.</span> <span class="nav-text">Node安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Git%E5%AE%89%E8%A3%85"><span class="nav-number">3.</span> <span class="nav-text">Git安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Github%E6%B3%A8%E5%86%8C%E5%8F%8A%E5%88%9B%E5%BB%BA%E4%BB%93%E5%BA%93"><span class="nav-number">4.</span> <span class="nav-text">Github注册及创建仓库</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#SSH%E9%85%8D%E7%BD%AE"><span class="nav-number">5.</span> <span class="nav-text">SSH配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AE%89%E8%A3%85Hexo"><span class="nav-number">6.</span> <span class="nav-text">安装Hexo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%8A%8A%E5%8D%9A%E5%AE%A2%E6%8E%A8%E9%80%81%E8%87%B3Github"><span class="nav-number">7.</span> <span class="nav-text">把博客推送至Github</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Next%E4%B8%BB%E9%A2%98"><span class="nav-number">8.</span> <span class="nav-text">Next主题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%87%E6%B3%A8"><span class="nav-number">8.1.</span> <span class="nav-text">备注</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Next%E4%B8%BB%E9%A2%98%E5%90%AF%E7%94%A8"><span class="nav-number">8.2.</span> <span class="nav-text">Next主题启用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9B%B4%E6%94%B9Next%E4%B8%BA%E4%B8%AD%E6%96%87"><span class="nav-number">8.3.</span> <span class="nav-text">更改Next为中文</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A2%9E%E5%8A%A0%E6%A0%87%E7%AD%BE%E9%A1%B5%E5%92%8C%E5%88%86%E7%B1%BB%E9%A1%B5"><span class="nav-number">8.4.</span> <span class="nav-text">增加标签页和分类页</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%BB%E9%A2%98%E6%A0%B7%E5%BC%8F%E7%9A%84%E6%9B%B4%E6%94%B9"><span class="nav-number">8.5.</span> <span class="nav-text">主题样式的更改</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9B%B4%E6%94%B9%E5%A4%B4%E5%83%8F%E5%8F%8A%E5%A4%B4%E5%83%8F%E6%A0%B7%E5%BC%8F%E8%AE%BE%E7%BD%AE"><span class="nav-number">8.6.</span> <span class="nav-text">更改头像及头像样式设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9B%B4%E6%94%B9%E6%A0%87%E9%A2%98%E5%92%8C%E4%BD%9C%E8%80%85%E5%8F%8A%E9%93%BE%E6%8E%A5"><span class="nav-number">8.7.</span> <span class="nav-text">更改标题和作者及链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%AF%E7%94%A8%E4%BE%A7%E8%BE%B9%E6%A0%8F%E7%A4%BE%E4%BA%A4%E9%93%BE%E6%8E%A5"><span class="nav-number">8.8.</span> <span class="nav-text">启用侧边栏社交链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%90%AF%E7%94%A8%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5"><span class="nav-number">8.9.</span> <span class="nav-text">启用友情链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0"><span class="nav-number">8.10.</span> <span class="nav-text">新建文章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Markdown%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8%E4%B8%8E%E8%AF%AD%E6%B3%95"><span class="nav-number">8.11.</span> <span class="nav-text">Markdown的基本使用与语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%A6%96%E9%A1%B5%E6%96%87%E7%AB%A0%E8%AE%BE%E7%BD%AE%E6%96%87%E7%AB%A0%E6%91%98%E8%A6%81%E5%92%8C%E6%88%AA%E6%96%AD"><span class="nav-number">8.12.</span> <span class="nav-text">首页文章设置文章摘要和截断</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9-%E4%BB%A3%E7%A0%81%E5%9D%97%E5%8C%85%E8%A3%B9%E5%AD%97%E6%AE%B5%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A0%B7%E5%BC%8F"><span class="nav-number">8.13.</span> <span class="nav-text">修改&#96;&#96;代码块包裹字段自定义样式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E5%8A%A8%E6%80%81%E8%83%8C%E6%99%AF"><span class="nav-number">8.14.</span> <span class="nav-text">添加动态背景</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%99%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0fork-Github"><span class="nav-number">8.15.</span> <span class="nav-text">给博客添加fork Github</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E6%96%87%E7%AB%A0%E5%86%85%E9%93%BE%E6%8E%A5%E6%A0%B7%E5%BC%8F"><span class="nav-number">8.16.</span> <span class="nav-text">修改文章内链接样式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%80%E5%90%AF%E6%89%93%E8%B5%8F%E5%8A%9F%E8%83%BD"><span class="nav-number">8.17.</span> <span class="nav-text">开启打赏功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E6%96%87%E7%AB%A0%E5%BA%95%E9%83%A8%E5%B8%A6-%E7%9A%84%E6%A0%87%E7%AD%BE"><span class="nav-number">8.18.</span> <span class="nav-text">修改文章底部带#的标签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A2%9E%E5%8A%A0Valine%E8%AF%84%E8%AE%BA%E5%8A%9F%E8%83%BD"><span class="nav-number">8.19.</span> <span class="nav-text">增加Valine评论功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A2%9E%E5%8A%A0%E6%9D%A5%E5%BF%85%E5%8A%9B%E8%AF%84%E8%AE%BA"><span class="nav-number">8.20.</span> <span class="nav-text">增加来必力评论</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A2%9E%E5%8A%A0Gitment%E8%AF%84%E8%AE%BA"><span class="nav-number">8.21.</span> <span class="nav-text">增加Gitment评论</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A2%9E%E5%8A%A0%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD"><span class="nav-number">8.22.</span> <span class="nav-text">增加搜索功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A2%9E%E5%8A%A0%E4%B8%8D%E8%92%9C%E5%AD%90%E7%BB%9F%E8%AE%A1%E8%AE%BF%E9%97%AE%E9%87%8F%E5%8A%9F%E8%83%BD"><span class="nav-number">8.23.</span> <span class="nav-text">增加不蒜子统计访问量功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A2%9E%E5%8A%A0%E5%86%85%E5%AE%B9%E5%88%86%E4%BA%AB%E6%9C%8D%E5%8A%A1"><span class="nav-number">8.24.</span> <span class="nav-text">增加内容分享服务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A2%9E%E5%8A%A0%E5%8A%A0%E8%BD%BD%E6%95%88%E6%9E%9C"><span class="nav-number">8.25.</span> <span class="nav-text">增加加载效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E4%BB%A3%E7%A0%81%E5%9D%97%E9%AB%98%E4%BA%AE%E6%95%88%E6%9E%9C"><span class="nav-number">8.26.</span> <span class="nav-text">设置代码块高亮效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%9A%90%E8%97%8F%E5%BA%95%E9%83%A8%E7%9A%84%E5%BC%BA%E5%8A%9B%E9%A9%B1%E5%8A%A8"><span class="nav-number">8.27.</span> <span class="nav-text">隐藏底部的强力驱动</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E5%AD%97%E6%95%B0%E7%BB%9F%E8%AE%A1%E5%92%8C%E9%98%85%E8%AF%BB%E6%97%B6%E9%95%BF"><span class="nav-number">8.28.</span> <span class="nav-text">添加字数统计和阅读时长</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0RSS%E5%8A%9F%E8%83%BD"><span class="nav-number">8.29.</span> <span class="nav-text">添加RSS功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E7%AB%A0%E6%9C%AB%E5%B0%BE%E6%B7%BB%E5%8A%A0%E2%80%9D%E6%9C%AC%E6%96%87%E7%BB%93%E6%9D%9F%E2%80%9D%E6%A0%87%E8%AE%B0"><span class="nav-number">8.30.</span> <span class="nav-text">文章末尾添加”本文结束”标记</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A2%9E%E5%8A%A0%E9%BC%A0%E6%A0%87%E7%82%B9%E5%87%BB%E7%89%B9%E6%95%88-%E5%BF%83%E5%9E%8B%E7%89%B9%E6%95%88"><span class="nav-number">8.31.</span> <span class="nav-text">增加鼠标点击特效-心型特效</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BD%91%E7%AB%99%E5%BA%95%E9%83%A8%E5%AD%97%E6%95%B0%E7%BB%9F%E8%AE%A1"><span class="nav-number">8.32.</span> <span class="nav-text">网站底部字数统计</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E7%BD%91%E7%AB%99%E7%9A%84%E5%9B%BE%E6%A0%87Favicon"><span class="nav-number">8.33.</span> <span class="nav-text">设置网站的图标Favicon</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BF%AE%E6%94%B9%E7%BD%91%E9%A1%B5%E5%BA%95%E9%83%A8%E8%B7%B3%E5%8A%A8%E7%9A%84%E5%BF%83"><span class="nav-number">8.34.</span> <span class="nav-text">修改网页底部跳动的心</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%98%BE%E7%A4%BA%E5%BD%93%E5%89%8D%E6%B5%8F%E8%A7%88%E8%BF%9B%E5%BA%A6"><span class="nav-number">8.35.</span> <span class="nav-text">显示当前浏览进度</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%9A%E6%96%87%E7%BD%AE%E9%A1%B6"><span class="nav-number">8.36.</span> <span class="nav-text">博文置顶</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E6%A0%87%E7%AD%BE%E4%BA%91"><span class="nav-number">8.37.</span> <span class="nav-text">添加标签云</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E9%9F%B3%E4%B9%90"><span class="nav-number">8.38.</span> <span class="nav-text">添加音乐</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B7%BB%E5%8A%A0%E7%B2%92%E5%AD%90%E6%97%B6%E9%92%9F%E7%89%B9%E6%95%88"><span class="nav-number">8.39.</span> <span class="nav-text">添加粒子时钟特效</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%BA%E5%8D%9A%E5%AE%A2%E6%B7%BB%E5%8A%A0%E7%9C%8B%E6%9D%BF%E5%A8%98%E6%95%88%E6%9E%9C"><span class="nav-number">8.40.</span> <span class="nav-text">为博客添加看板娘效果</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA404%E9%A1%B5%E9%9D%A2"><span class="nav-number">8.41.</span> <span class="nav-text">创建404页面</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">8.42.</span> <span class="nav-text">总结</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo-SEO%E4%BC%98%E5%8C%96"><span class="nav-number">9.</span> <span class="nav-text">Hexo-SEO优化</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%99%BE%E5%BA%A6%E7%AB%99%E9%95%BF"><span class="nav-number">9.1.</span> <span class="nav-text">百度站长</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%99%BE%E5%BA%A6%E6%8F%90%E4%BA%A4%E9%93%BE%E6%8E%A5"><span class="nav-number">9.1.1.</span> <span class="nav-text">百度提交链接</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%99%BE%E5%BA%A6%E7%AB%99%E9%95%BF%E5%B9%B3%E5%8F%B0%E6%B7%BB%E5%8A%A0%E7%BD%91%E7%AB%99%E7%AE%A1%E7%90%86"><span class="nav-number">9.1.2.</span> <span class="nav-text">百度站长平台添加网站管理</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Hexo%E6%80%A7%E8%83%BD%E4%BC%98%E5%8C%96"><span class="nav-number">10.</span> <span class="nav-text">Hexo性能优化</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%BE%E7%89%87%E6%87%92%E5%8A%A0%E8%BD%BD"><span class="nav-number">10.1.</span> <span class="nav-text">图片懒加载</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8D%9A%E6%96%87%E5%8E%8B%E7%BC%A9"><span class="nav-number">10.2.</span> <span class="nav-text">博文压缩</span></a></li><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">10.3.</span> <span class="nav-text"></span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -882,7 +891,7 @@
         <a href="https://github.com/coderapg" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;coderapg" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
       </span>
       <span class="links-of-author-item">
-        <a href="https://weibo.com/coderape" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;coderape" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>Weibo</a>
+        <a href="https://weibo.com/coderape" title="微博 → https:&#x2F;&#x2F;weibo.com&#x2F;coderape" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>微博</a>
       </span>
   </div>
 
@@ -954,13 +963,13 @@
       <i class="fa fa-area-chart"></i>
     </span>
       <span class="post-meta-item-text">站点总字数：</span>
-    <span title="站点总字数">40k</span>
+    <span title="站点总字数">41k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span class="post-meta-item-text">站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">36 分钟</span>
+    <span title="站点阅读时长">38 分钟</span>
 </div>
 
 <!--
@@ -970,7 +979,7 @@
 <!--统计全站博客文字-->
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共14k字</span>
+  <span class="post-count">博客全站共14.2k字</span>
 </div>
 
         
@@ -1007,6 +1016,8 @@
   </div>
 
   
+  
+  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
   <script src="/lib/anime.min.js"></script>
   <script src="/lib/velocity/velocity.min.js"></script>
   <script src="/lib/velocity/velocity.ui.min.js"></script>
@@ -1079,7 +1090,7 @@ NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
 });
 </script>
 
-<script>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script><script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
                 preloadRatio: 1,
