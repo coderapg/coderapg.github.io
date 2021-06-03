@@ -539,7 +539,6 @@
 </ol>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: 404</span><br><span class="line">date: 2021-03-01 18:22:56</span><br><span class="line">type: &quot;404&quot;</span><br><span class="line">layout: &quot;404&quot;</span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=&quot;en&quot;&gt;</span><br><span class="line">	&lt;head&gt;</span><br><span class="line">		&lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">		&lt;title&gt;404&lt;/title&gt;</span><br><span class="line">	&lt;/head&gt;</span><br><span class="line">	&lt;body&gt;</span><br><span class="line">		&lt;script type=&quot;text/javascript&quot; 			  src=&quot;//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;</span><br><span class="line">	&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
 
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>对于<code>Hexo</code>来说能实现的效果太多太多，这些只是我在创建<code>Hexo</code>时所记录的实现步骤进行总结，希望能给你带来帮助。同时以后如果再实现某些功能的话，也会进行补全相应的操作。</p>
 <h1 id="Hexo-SEO优化"><a href="#Hexo-SEO优化" class="headerlink" title="Hexo-SEO优化"></a><code>Hexo-SEO</code>优化</h1><p>查看这篇<a href="https://segmentfault.com/a/1190000017986794">参考文献</a>中的<code>SEO</code>优化。</p>
 <h2 id="百度站长"><a href="#百度站长" class="headerlink" title="百度站长"></a>百度站长</h2><h3 id="百度提交链接"><a href="#百度提交链接" class="headerlink" title="百度提交链接"></a>百度提交链接</h3><p>如果在百度搜索输入 site:你的域名 如果出现以下的效果证明就是网站还没被百度收录的，我们现在点下面的提交网址，进入百度站长工具提交。</p>
 <p><img src="https://image-static.segmentfault.com/422/522/4225223200-5c47cdfb484d3_fix732" alt="图片"></p>
@@ -588,7 +587,18 @@
 <ol start="3">
 <li>执行<code>hexo g</code>完成后，续执行<code>gulp</code>。</li>
 </ol>
-<h2 id=""><a href="#" class="headerlink" title=""></a></h2>]]></content>
+<h2 id="代码压缩"><a href="#代码压缩" class="headerlink" title="代码压缩"></a>代码压缩</h2><ol>
+<li>网页的代码存在大量空白符，压缩代码可以提高网站被访问速度。</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-neat --save</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>在<code>blog\_config.yml</code>文件中添加以下代码:</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># hexo-neat</span></span><br><span class="line"><span class="comment"># 博文压缩</span></span><br><span class="line">neat_enable: <span class="literal">true</span></span><br><span class="line"><span class="comment"># 压缩html</span></span><br><span class="line">neat_html:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  exclude:</span><br><span class="line"><span class="comment"># 压缩css  </span></span><br><span class="line">neat_css:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  exclude:</span><br><span class="line">    - <span class="string">&#x27;**/*.min.css&#x27;</span></span><br><span class="line"><span class="comment"># 压缩js</span></span><br><span class="line">neat_js:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  mangle: <span class="literal">true</span></span><br><span class="line">  output:</span><br><span class="line">  compress:</span><br><span class="line">  exclude:</span><br><span class="line">    - <span class="string">&#x27;**/*.min.js&#x27;</span></span><br><span class="line">    - <span class="string">&#x27;**/jquery.fancybox.pack.js&#x27;</span></span><br><span class="line">    - <span class="string">&#x27;**/index.js&#x27;</span>  </span><br></pre></td></tr></table></figure>
+
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>对于<code>Hexo</code>来说能实现的效果太多太多，这些只是我在创建<code>Hexo</code>时所记录的实现步骤进行总结，希望能给你带来帮助。同时以后如果再实现某些功能的话，也会进行补全相应的操作。</p>
+]]></content>
       <categories>
         <category>blog</category>
       </categories>
