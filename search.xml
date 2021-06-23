@@ -618,45 +618,45 @@
 <p>本文是基于<code>Typora</code>+<code>PicGo</code>+<code>Gitee</code>实现搭建图床功能。在搭建图床之前，需要如下操作：</p>
 <h2 id="Gitee"><a href="#Gitee" class="headerlink" title="Gitee"></a>Gitee</h2><h3 id="Gitee注册流程"><a href="#Gitee注册流程" class="headerlink" title="Gitee注册流程"></a>Gitee注册流程</h3><p><a href="https://zhuanlan.zhihu.com/p/360692660">注册流程</a></p>
 <h3 id="Gitee创建仓库及获取私人令牌"><a href="#Gitee创建仓库及获取私人令牌" class="headerlink" title="Gitee创建仓库及获取私人令牌"></a>Gitee创建仓库及获取私人令牌</h3><p>按照上面<strong>Gitee注册流程</strong>注册完成后，创建一个新的仓库：</p>
-<p><img src="https://gitee.com/hei_girls/blogimgs/raw/master/blog/20210623015113.png" alt="image-20210623015113478"></p>
-<p><img src="https://gitee.com/hei_girls/blogimgs/raw/master/blog/20210623020143.png" alt="image-20210623020048140"></p>
+<p><img src="https://gitee.com/hei_girls/blogimgs/raw/master/blog/%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/20210623144952.png" alt="image-20210623144952"></p>
+<p><img src="https://gitee.com/hei_girls/blogimgs/raw/master/blog/%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/20210623020143.png" alt="image-20210623020143"></p>
 <p>上述完成后获取<code>私人令牌</code>：</p>
-<p><img src="https://gitee.com/hei_girls/blogimgs/raw/master/blog/20210623020412.png" alt="image-20210623020411397"></p>
-<p><img src="https://gitee.com/hei_girls/blogimgs/raw/master/blog/20210623020646.png" alt="image-20210623020645519"></p>
-<p><img src="https://gitee.com/hei_girls/blogimgs/raw/master/blog/20210623020855.png" alt="image-20210623020855110"></p>
-<p><img src="https://gitee.com/hei_girls/blogimgs/raw/master/blog/20210623021153.png" alt="image-20210623021152707"></p>
+<p><img src="https://gitee.com/hei_girls/blogimgs/raw/master/blog/%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/20210623020412.png" alt="image-20210623020412"></p>
+<p><img src="https://gitee.com/hei_girls/blogimgs/raw/master/blog/%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/20210623020646.png" alt="image-20210623020646"></p>
+<p><img src="https://gitee.com/hei_girls/blogimgs/raw/master/blog/%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/20210623020855.png" alt="image-20210623020855110"></p>
+<p><img src="https://gitee.com/hei_girls/blogimgs/raw/master/blog/%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/20210623021153.png" alt="image-20210623021153"></p>
 <p>复制好令牌后去<code>PicGo</code>中进行配置</p>
-<h2 id="PicGo"><a href="#PicGo" class="headerlink" title="PicGo"></a>PicGo</h2><h3 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h3><p><a href="https://github.com/Molunerfinn/PicGo/tags">PicGo下载地址</a></p>
+<h2 id="PicGo"><a href="#PicGo" class="headerlink" title="PicGo"></a>PicGo</h2><h3 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h3><p><a href="https://molunerfinn.com/PicGo/">PicGo官网</a></p>
+<p><a href="https://github.com/Molunerfinn/PicGo/tags">PicGo下载地址</a></p>
 <p>这里我使用的版本是<code>v2.3.0-beta.6</code>。点击你需要下载的版本下载并安装：</p>
-<p><img src="https://gitee.com/hei_girls/blogimgs/raw/master/blog/20210623021949.png" alt="image-20210623021949132"></p>
+<p><img src="https://gitee.com/hei_girls/blogimgs/raw/master/blog/%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/20210623021949.png" alt="image-20210623021949132"></p>
 <p>傻瓜式下一步安装即可，需要更改路径的话，记得更换路径即可。</p>
 <p>当你看到如下界面，即为安装成功：</p>
-<p><img src="https://gitee.com/hei_girls/blogimgs/raw/master/blog/20210623022451.png" alt="image-20210623022451433"></p>
-<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p><img src="https://gitee.com/hei_girls/blogimgs/raw/master/blog/20210623035700.png" alt="image-20210623022732858"></p>
-<p><img src="https://gitee.com/hei_girls/blogimgs/raw/master/blog/20210623040056.png" alt="image-20210623023224046"></p>
-<p><img src="https://gitee.com/hei_girls/blogimgs/raw/master/blog/20210623040159.png" alt="image-20210623024301962"></p>
+<p><img src="https://gitee.com/hei_girls/blogimgs/raw/master/blog/%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/20210623022451.png" alt="image-20210623022451433"></p>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p><img src="https://gitee.com/hei_girls/blogimgs/raw/master/blog/%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/20210623035744.png" alt="image-20210623022732858"></p>
+<p><img src="https://gitee.com/hei_girls/blogimgs/raw/master/blog/%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/20210623040056.png" alt="image-20210623023224046"></p>
+<p><img src="https://gitee.com/hei_girls/blogimgs/raw/master/blog/%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/20210623040159.png" alt="image-20210623024301962"></p>
 <ul>
 <li><p><code>owner</code></p>
-<p><img src="https://gitee.com/hei_girls/blogimgs/raw/master/blog/20210623040316.png" alt="image-20210623024855073"></p>
+<p><img src="https://gitee.com/hei_girls/blogimgs/raw/master/blog/%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/20210623040316.png" alt="image-20210623024855073"></p>
 </li>
 <li><p><code>repo</code></p>
-<p><img src="https://gitee.com/hei_girls/blogimgs/raw/master/blog/20210623040441.png" alt="image-20210623025304692"></p>
+<p><img src="https://gitee.com/hei_girls/blogimgs/raw/master/blog/%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/20210623040429.png" alt="image-20210623025304692"></p>
 </li>
 <li><p><code>path</code></p>
-<ul>
-<li>这里填写的是你在<code>blogimgs</code>仓库中可以创建多个文件夹进行归类，例如<code>html</code>相关可以放到<code>HTML</code>文件夹(这时path路径就得改为<code>HTML</code>)，<code>blog</code>相关的图片就放到<code>blog</code>文件夹中归类。</li>
-</ul>
+<p>这里填写的是你在<code>blogimgs</code>仓库中可以创建多个文件夹进行归类，例如<code>html</code>相关可以放到<code>HTML</code>文件夹(这时path路径就得改为<code>HTML</code>)，<code>blog</code>相关的图片就放到<code>blog</code>文件夹中归类。</p>
 </li>
 <li><p><code>token</code></p>
 <p>这里的<code>token</code>是在<code>Gitee</code>中获取私人令牌时复制的私人令牌，把私人令牌复制到<code>token</code>中即可，如果忘记了，可以从新生成新令牌。</p>
 </li>
 </ul>
-<h2 id="typora"><a href="#typora" class="headerlink" title="typora"></a>typora</h2><h3 id="typora下载"><a href="#typora下载" class="headerlink" title="typora下载"></a>typora下载</h3><p><a href="https://www.typora.io/">typora下载</a></p>
-<p><img src="https://gitee.com/hei_girls/blogimgs/raw/master/blog/20210623040526.png" alt="image-20210623030442745"></p>
-<h3 id="typora配置"><a href="#typora配置" class="headerlink" title="typora配置"></a>typora配置</h3><p><img src="https://gitee.com/hei_girls/blogimgs/raw/master/blog/20210623040556.png" alt="image-20210623030930396"></p>
-<p><img src="https://gitee.com/hei_girls/blogimgs/raw/master/blog/20210623040638.png" alt="image-20210623031452922"></p>
-<h3 id="上传图片"><a href="#上传图片" class="headerlink" title="上传图片"></a>上传图片</h3><p><img src="https://gitee.com/hei_girls/blogimgs/raw/master/blog/20210623040734.png" alt="image-20210623031701933"></p>
-<p>或者下载<a href="https://www.snipaste.com/">snipaste贴图</a>，进行复制粘贴到<code>typora</code>中即可。</p>
+<h2 id="Typora"><a href="#Typora" class="headerlink" title="Typora"></a>Typora</h2><h3 id="Typora下载"><a href="#Typora下载" class="headerlink" title="Typora下载"></a>Typora下载</h3><p><a href="https://www.typora.io/">Typora下载</a></p>
+<p><img src="https://gitee.com/hei_girls/blogimgs/raw/master/blog/%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/20210623040510.png" alt="image-20210623030442745"></p>
+<h3 id="typora配置"><a href="#typora配置" class="headerlink" title="typora配置"></a>typora配置</h3><p><img src="https://gitee.com/hei_girls/blogimgs/raw/master/blog/%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/20210623040546.png" alt="image-20210623030930396"></p>
+<p><img src="https://gitee.com/hei_girls/blogimgs/raw/master/blog/%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/20210623040626.png" alt="image-20210623031452922"></p>
+<h3 id="上传图片"><a href="#上传图片" class="headerlink" title="上传图片"></a>上传图片</h3><p><img src="https://gitee.com/hei_girls/blogimgs/raw/master/blog/%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/20210623115406.png" alt="image-20210623115405800"></p>
+<p>或者下载<a href="https://www.snipaste.com/">snipaste贴图</a>，进行复制粘贴到<code>Typora</code>中，<code>Typora</code>会自动上传图片并返回图片链接。</p>
+<p>如果选择<code>snipaste贴图</code>自动上传的话，电脑会在<code>C:\Users\用户名称\AppData\Roaming\Typora\typora-user-images</code>保存你使用过的图片，此时我们需要定期清理即可，避免<code>C</code>盘过于臃肿。</p>
 ]]></content>
       <categories>
         <category>blog</category>
