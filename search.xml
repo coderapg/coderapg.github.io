@@ -5,6 +5,7 @@
     <url>/2018/03/18/git%E4%B8%8A%E4%BC%A0%E9%A1%B9%E7%9B%AE%E5%88%B0gitee%E6%88%96github/</url>
     <content><![CDATA[<h1 id="使用git上传项目"><a href="#使用git上传项目" class="headerlink" title="使用git上传项目"></a>使用<code>git</code>上传项目</h1><h2 id="建立本地git仓库"><a href="#建立本地git仓库" class="headerlink" title="建立本地git仓库"></a>建立本地<code>git</code>仓库</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">cd 到你的本地项目根目录下，执行git init初始化命令</span><br><span class="line">git init</span><br></pre></td></tr></table></figure>
 <h2 id="将本地项目工作区的所有文件添加到暂存区"><a href="#将本地项目工作区的所有文件添加到暂存区" class="headerlink" title="将本地项目工作区的所有文件添加到暂存区"></a>将本地项目工作区的<code>所有文件</code>添加到暂存区</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git add .    // . 表示所有文件, 如果想添加项目中的指定文件，那就把 . 改为指定文件名即可</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
 <h2 id="将暂存区的文件提交到本地仓库"><a href="#将暂存区的文件提交到本地仓库" class="headerlink" title="将暂存区的文件提交到本地仓库"></a>将暂存区的文件提交到本地仓库</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git commit -m &quot;提交项目名称&quot;   //冒号里面写注释语句。例如:git commit -m &quot;init project&quot;</span><br></pre></td></tr></table></figure>
 <h2 id="在码云-Github上创建自己的项目，创建如图所示"><a href="#在码云-Github上创建自己的项目，创建如图所示" class="headerlink" title="在码云/Github上创建自己的项目，创建如图所示"></a>在<code>码云/Github</code>上创建自己的项目，创建如图所示</h2><ol>
 <li>新建仓库<br><img src="https://gitee.com/hei_girls/blogimgs/raw/master/blog/%E6%90%AD%E5%BB%BA%E5%9B%BE%E5%BA%8A/20210623144952.png" alt="image-20210623144952"></li>
